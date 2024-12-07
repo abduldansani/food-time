@@ -35,7 +35,7 @@ const Hero = () => {
               <input
                 type="text"
                 placeholder="Enter your location"
-                className="flex-1 px-2 focus:outline-none flex-shrink bg-transparent text-size-18 lg:text-size-20 max-w-[10vw]"
+                className="flex-1 px-2 focus:outline-none flex-shrink bg-transparent text-size-18 lg:text-size-20 max-w-[60vw] md:max-w-[25vw]"
               />
             </div>
             <button className="flex items-center justify-center gap-2 rounded-[120px] py-2 lg:py-4 px-6 sm:px-8 lg:px-14 font-medium text-size-18 lg:text-size-22 bg-primary text-white shrink-0">
