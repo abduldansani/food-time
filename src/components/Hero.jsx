@@ -1,7 +1,7 @@
 import leaf from "../assets/images/leaf.png";
 import leaf2 from "../assets/images/leaf2.png";
 import heroImg from "../assets/images/heroImg.png";
-import search from "../assets/icons/search.svg";
+import search from "../assets/icons/Search.svg";
 import location from "../assets/icons/location.svg";
 import check from "../assets/icons/check.svg";
 const Hero = () => {
