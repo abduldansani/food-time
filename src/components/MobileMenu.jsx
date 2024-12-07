@@ -24,7 +24,14 @@ const MobileMenu = ({ onMenuClose }) => {
           </div>
         </div>
         <div className="p-4">
-          <p className="text-center text-[16px]">© 2023 Nayeemur R Sakib</p>
+          <p className="text-center text-[16px]">
+            <a
+              href="https://www.figma.com/community/file/1235552657512909825/online-food-ordering-website-landing-page"
+              target="_blank"
+            >
+              © 2023 Nayeemur R Sakib
+            </a>
+          </p>
         </div>
       </div>
     </div>
