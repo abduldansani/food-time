@@ -4,7 +4,7 @@ import Logo from "./Logo";
 const Footer = () => {
   return (
     <footer className="bg-[#224300] text-[#DEDEDE]  pb-16">
-      <div className="container xl:max-w-7xl mx-auto px-2 flex flex-col lg:flex-row justify-between gap-16 xl:gap-28 py-24">
+      <div className="px-6 container xl:max-w-7xl mx-auto md:px-2 flex flex-col lg:flex-row justify-between gap-16 xl:gap-28 py-24">
         <div className="space-y-9 max-w-[485px]">
           <Logo />
           <div className="text-size-18">
@@ -36,7 +36,7 @@ const Footer = () => {
           href="https://www.figma.com/community/file/1235552657512909825/online-food-ordering-website-landing-page"
           target="_blank"
         >
-          © 2023 Nayeemur R Sakib
+          © 2023 <span className="underline">Nayeemur R Sakib</span>
         </a>
       </p>
     </footer>

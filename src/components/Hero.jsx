@@ -27,7 +27,7 @@ const Hero = () => {
           <p className="text-size-20 lg:text-size-24 font-semibold text-paragraph1">
             Freshly made food delivered to your door.
           </p>
-          <div className="flex justify-between border-2 border-lightBlack border-opacity-20 rounded-[120px] w-full">
+          <div className="flex justify-between border-2 border-lightBlack border-opacity-20 rounded-[120px] max-w-[95vw]">
             <div className="p-2 flex flex-1">
               <div className="bg-secondary shrink-0 p-2 rounded-full flex items-center justify-center">
                 <img src={location} alt="" className="w-5 h-5 lg:w-8 lg:h-8" />
@@ -35,7 +35,7 @@ const Hero = () => {
               <input
                 type="text"
                 placeholder="Enter your location"
-                className="flex-1 px-2 focus:outline-none flex-shrink bg-transparent text-size-18 lg:text-size-20"
+                className="flex-1 px-2 focus:outline-none flex-shrink bg-transparent text-size-18 lg:text-size-20 max-w-[10vw]"
               />
             </div>
             <button className="flex items-center justify-center gap-2 rounded-[120px] py-2 lg:py-4 px-6 sm:px-8 lg:px-14 font-medium text-size-18 lg:text-size-22 bg-primary text-white shrink-0">
