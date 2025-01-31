@@ -2,26 +2,34 @@ import restaurant from "../assets/icons/restaurant.svg";
 import order from "../assets/icons/order.svg";
 import deliver from "../assets/icons/deliver.svg";
 
+import { motion } from "motion/react";
+
 const Benefits = () => {
   return (
-    <section className="py-28">
-      <div className="container mx-auto px-2 xl:max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <motion.section
+      initial={{ y: 100 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="py-28"
+    >
+      <div className="container mx-auto grid grid-cols-1 gap-8 px-2 sm:grid-cols-2 lg:grid-cols-3 xl:max-w-7xl">
         {benefits.map((benefit, i) => (
           <div
             key={i}
-            className="flex flex-col gap-6 p-8 hover:bg-primary hover:bg-opacity-5 rounded-2xl"
+            className="flex flex-col gap-6 rounded-2xl p-8 hover:bg-primary hover:bg-opacity-5"
           >
-            <img src={benefit.icon} alt="" className="w-[75px] h-[90px]" />
-            <h3 className="text-size-30 leading-[140%] font-semibold">
+            <img src={benefit.icon} alt="" className="h-[90px] w-[75px]" />
+            <h3 className="text-size-30 font-semibold leading-[140%]">
               {benefit.title}
             </h3>
-            <p className="text-paragraph leading-[160%] text-paragraph-1">
+            <p className="text-paragraph-1 text-paragraph leading-[160%]">
               {benefit.description}
             </p>
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

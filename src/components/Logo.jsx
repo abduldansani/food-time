@@ -6,7 +6,7 @@ const Logo = ({ colored }) => {
         <span className="font-merienda font-bold">Food</span>
         <span className="font-poppins font-medium">Time</span>
       </div>
-      <img src={time} alt="" className="w-2.5 h-4" />
+      <img src={time} alt="" className="h-4 w-2.5" />
     </div>
   );
 };

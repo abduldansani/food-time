@@ -3,9 +3,9 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#224300] text-[#DEDEDE]  pb-16">
-      <div className="px-6 container xl:max-w-7xl mx-auto md:px-2 flex flex-col lg:flex-row justify-between gap-16 xl:gap-28 py-24">
-        <div className="space-y-9 max-w-[485px]">
+    <footer className="bg-[#224300] pb-16 text-[#DEDEDE]">
+      <div className="container mx-auto flex flex-col justify-between gap-16 px-6 py-24 md:px-2 lg:flex-row xl:max-w-7xl xl:gap-28">
+        <div className="max-w-[485px] space-y-9">
           <Logo />
           <div className="text-size-18">
             Lorem ipsum dolor sit amet consectetur. Odio amet natoque tortor
@@ -14,13 +14,13 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between flex-col md:flex-row gap-12 md:gap-16 xl:gap-32 ">
+        <div className="flex flex-col justify-between gap-12 md:flex-row md:gap-16 xl:gap-32">
           {footerLinks.map((link, i) => (
             <div key={i} className="space-y-5 xl:space-y-9">
-              <div className="font-semibold text-size-18 xl:text-size-20 text-white">
+              <div className="text-size-18 font-semibold text-white xl:text-size-20">
                 {link.title}
               </div>
-              <div className="flex flex-col gap-2 xl:gap-3 text-size-18 xl:text-size-20">
+              <div className="flex flex-col gap-2 text-size-18 xl:gap-3 xl:text-size-20">
                 {link.links.map((link, i) => (
                   <a key={i} href="#">
                     {link}

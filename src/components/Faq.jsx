@@ -1,6 +1,8 @@
 import { useState } from "react";
 import FaqRow from "./FaqRow";
 
+import { motion } from "motion/react";
+
 const Faq = () => {
   const [openQuestion, setOpenQuestion] = useState(null);
 
@@ -8,16 +10,22 @@ const Faq = () => {
     setOpenQuestion(questionId);
   };
   return (
-    <section className="pb-28">
-      <div className="container space-y-9 mx-auto px-2 max-w-7xl">
-        <h2 className="font-semibold text-size-30 lg:text-size-40 text-paragraph1 text-center">
+    <motion.section
+      initial={{ y: 100 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      className="pb-28"
+    >
+      <div className="container mx-auto max-w-7xl space-y-9 px-2">
+        <h2 className="text-center text-size-30 font-semibold text-paragraph1 lg:text-size-40">
           Frequently asked questions
         </h2>
-        <div className="flex gap-2 md:gap-2.5 justify-center">
-          <button className="rounded-[120px] py-2 px-6 md:py-4 md:px-14 font-medium text-size-18 md:text-size-22 bg-primary text-white">
+        <div className="flex justify-center gap-2 md:gap-2.5">
+          <button className="rounded-[120px] bg-primary px-6 py-2 text-size-18 font-medium text-white md:px-14 md:py-4 md:text-size-22">
             General
           </button>
-          <button className="rounded-[120px] py-2 px-6 md:py-4 md:px-14 font-medium text-size-18 md:text-size-22 text-primary border border-primary">
+          <button className="rounded-[120px] border border-primary px-6 py-2 text-size-18 font-medium text-primary md:px-14 md:py-4 md:text-size-22">
             For business
           </button>
         </div>
@@ -44,7 +52,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
